@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CCTV website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">HackBlock Heroes</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#cctv">CCTV</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#fff">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Your Safety Our Responsibility </h2>
+            
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec">
+            <h2>Elevating Safety with AI-driven cctv</h2>
+            <p>In a bold leap towards the future of rail travel, we introduce our groundbreaking solution that marries cutting-edge 
+                technology with a deep commitment to safety, privacy, and efficiency on the sprawling canvas of Indian Railways. 
+                Our AI-driven CCTV network represents a paradigm shift in crowd management, crime prevention, and work monitoring.
+                 Picture a seamless, interconnected web of smart cameras meticulously placed across stations, platforms, and trains,
+                  all working tirelessly to safeguard passengers and enhance the railway experience.<br><br>
+                 Our real-time data analysis algorithms are the beating heart of this innovation. They possess the power to instantly 
+                 detect and respond to potential security threats, ensuring that stations and trains remain secure sanctuaries for 
+                 passengers. Imagine an AI that recognizes unusual behavior patterns, swiftly identifying anomalies and alerting 
+                 x  security personnel when necessary, thus bolstering crime prevention efforts.But our vision goes beyond security. 
+                 We empower railway authorities with unparalleled insights into workforce productivity. Supervisors can now monitor 
+                 projects, track progress, and optimize resource allocation, fostering an environment of increased efficiency and
+                accountability. </p>
+                <br><br><br><br>
+                <h2>What Do We Offer?</h2>
+                <p>We offer cutting-edge AI and ML solutions designed to enhance safety, security, and productivity. Our innovative 
+                    technology transforms existing CCTV networks into intelligent systems capable of crowd management, crime prevention,
+                     and workplace monitoring. Whether you're hosting a large event, managing public gatherings, or optimizing urban 
+                     areas, our system keeps people safe by monitoring crowd density, detecting potential issues, and providing 
+                     real-time alerts to authorities. We also ensure workplace safety and productivity by tracking employee behavior 
+                     and environmental conditions. With a focus on data privacy and scalability, our solutions promise safer, smarter
+                     cities and more efficient workplaces</p><br><br>
+                     <p><strong>Crowd Management:</strong>   Our state-of-the-art system excels in crowd management, making it ideal for
+                         large events, public gatherings, and urban areas. By constantly monitoring crowd density and identifying 
+                         congestion points, we provide actionable insights to authorities. This proactive approach ensures smoother
+                          operations and enhances safety. In case of potential crowd-related emergencies, our system generates alerts, 
+                          enabling swift responses and guaranteeing public well-being.</p><br><br>
+                    <p><strong>Crime Prevention:</strong> With our technology, crime prevention becomes smarter and more effective. 
+                        We employ advanced video analytics to detect suspicious activities, unauthorized access, and safety violations. 
+                        When unusual behavior is detected, real-time alerts are sent to law enforcement agencies, enabling them to 
+                        respond rapidly and prevent criminal activities.</p><br><br>
+                    <p> <strong>Workplace Monitoring:</strong> Beyond public spaces, our solutions benefit workplaces by ensuring safety and productivity. By monitoring employee behavior and environmental conditions, we provide valuable insights that enhance both employee well-being and operational efficiency. Employers can better understand work patterns and address safety concerns.</p>
+
+        </div>
+        <div class="sec" >
+                    <h2 >CCTV</h2>
+                    <h3>Crowd Management</h3>
+                    <video id='cctv' width="520" height="640" autoplay muted controls loop autoplay playsinline style="pointer-events: none">
+                        <source src="Crowd-monitor.mp4" type="video/mp4">
+                    </video>  <br>
+                    <h3>Suspicious Activity Detection</h3>   
+                    <video id='cctv' width="520" height="640" autoplay muted controls loop autoplay playsinline style="pointer-events: none">
+                        <source src="violence.mp4" type="video/mp4">
+                        
+                    </video> 
+
+        </div>
+        <div class="sec" id="fff">
+            <h2>Let's Connect</h2>
+            <br>
+            <form action="action_page.php">
+          
+              <label class="lb" for="fname" style="max-width:100px">First Name</label>
+
+              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+          
+              <label class="lb" for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label class="lb" id="email" for="email">Enter your email:</label><br>
+              <input type="email" class="lbb" id="email" name="email" placeholder="Enter your email"><br>
+          
+              <label class="lb" for="country">Country</label>
+              <select id="country" name="country" placeholder="Your Country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+                <option value="Rus">Russia</option>
+                <option value="eng">England</option>
+              </select>
+          
+              <label class="lb" for="subject">Talk to us</label>
+              <textarea id="subject" name="subject" placeholder="Drop Your Message Here" style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+        <script>
+            let stars=document.getElementById('stars')
+            let moon=document.getElementById('moon')
+            let mountains_behind=document.getElementById('mountains_behind')
+            let text=document.getElementById('text')
+            let btn=document.getElementById('btn')
+            let mountains_front=document.getElementById('mountains_front')
+
+            window.addEventListener('scroll',function(){
+                let value=window.scrollY;
+                stars.style.left = value*0.25 +'px';
+                moon.style.top = value*1.05 +'px';
+                mountains_behind.style.top = value*0.05 +'px';
+                text.style.marginRight = value*0.5 +'px';
+                })
+        </script>
+    </body>
+</html>
